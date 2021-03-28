@@ -37,6 +37,9 @@ class App extends React.Component {
       modalIsOpen: false
     };
   }
+  componentWillMount = () => {
+    console.log("Environment", process.env.REACT_APP_ENV)
+  }
   handleNavClick = (nav) => {
     if (nav == "Login") {
       this.handleModalState()
