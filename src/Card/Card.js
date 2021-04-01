@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {IMG_BASE_URL} from '../config';
+import {IMG_BASE_URL} from '../config/config';
 
 export const List = React.memo((props) => (
    <Container>

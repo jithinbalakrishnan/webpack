@@ -1,11 +1,12 @@
 import React from 'react';
 import { List } from '../Card/Card';
 import { Title } from '../Components/Title';
-import { BASE_URL, API_KEY } from '../config';
+import { BASE_URL, API_KEY } from '../config/config';
 import { connect } from "react-redux";
 import * as Actions from '../store/actions/updateLogin';
 import * as WatchListActions from '../store/actions/watchList';
 import { withRouter } from 'react-router-dom';
+import {login} from '../movieClient'
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -17,6 +18,8 @@ class Dashboard extends React.Component {
 
   componentDidMount = () => {
     this.getTrendingList();
+    console.log(login())
+
   };
 
   getTrendingList = () => {

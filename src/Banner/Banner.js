@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import { BASE_URL, API_KEY } from '../config';
+import { BASE_URL, API_KEY } from '../config/config';
 import { connect } from "react-redux";
 import * as Actions from '../store/actions/updateMovies';
 import { useDispatch } from "react-redux";
