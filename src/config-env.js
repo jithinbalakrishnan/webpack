@@ -66,7 +66,7 @@ export default {
         enableDevTools: true,
     },
 
-    prod: {
+    production: {
         baseurl: {
             f2pAPI: "https://prod.farmtoplate.io",
         },
